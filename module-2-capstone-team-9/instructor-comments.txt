@@ -1,0 +1,11 @@
+- Your server code does not compile because there is a discrepancy between the class name JDBCaccountDAO and
+the class declaration: public class JdbcaccountDAO. (They should be the same).
+
+- On TenmoController, on the addTransfer method the path should not have any id's on the path variable.
+Anything that you want to pass in can be part of the body object. This id is however not being used anyways.
+Same comment for the updateTransferStatus method.
+
+- I am able to see myself on the list of users I can send money to, the account that is logged in should be
+filtered out of the list.
+
+- Upon successful transfer, consider displaying some sort of message.
